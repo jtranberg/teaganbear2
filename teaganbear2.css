@@ -1,0 +1,79 @@
+
+body
+{
+    
+    background: #333;
+}
+
+.teaganbear
+{
+
+animation: hue .5s linear infinite;
+}
+
+.bear
+{
+
+    padding:20px;
+    height: 200px;
+    width: 275px;
+    background-color: transparent;
+    animation: scale ease 3s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    
+    
+}
+
+@keyframes hue 
+{
+    0%, 100%
+        {
+            
+       filter: invert(57%) sepia(96%) saturate(3392%) hue-rotate(7deg) brightness(80%) contrast(83%) ;
+        }
+    25%
+        {
+        filter: invert(57%) sepia(96%) saturate(3392%) hue-rotate(10deg) brightness(150%) contrast(83%) ;
+        }
+    35%
+        {
+        filter: invert(57%) sepia(96%) saturate(3392%) hue-rotate(15deg) brightness(80%) contrast(83%) ;
+        }
+    50%
+        {
+        filter: invert(57%) sepia(96%) saturate(3392%) hue-rotate(15deg) brightness(80%) contrast(83%) ;
+        }
+    65%
+        {
+        filter: invert(57%) sepia(96%) saturate(3392%) hue-rotate(10deg) brightness(150%) contrast(83%) ;
+        }
+    75%
+        {
+        filter: invert(57%) sepia(96%) saturate(3392%) hue-rotate(6deg) brightness(10%) contrast(83%) ;
+       
+        }
+    80%
+        {
+        filter: invert(57%) sepia(96%) saturate(3392%) hue-rotate(15deg) brightness(75%) contrast(83%) ;
+        }
+    95%
+        {
+        filter: invert(57%) sepia(96%) saturate(3392%) hue-rotate(7deg) brightness(120%) contrast(83%) ;
+        }
+    
+}
+
+@keyframes scale
+ {
+    0%
+    {
+        filter: blur(75px);
+        scale: 0;
+    }
+    100%
+    {
+        filter: blur(0px);
+        scale: 1;
+    }
+}
